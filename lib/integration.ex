@@ -1,4 +1,4 @@
-defmodule Boostomatic do
+defmodule Boostomatic.Integration do
   @moduledoc "./README.md" |> File.stream!() |> Enum.drop(1) |> Enum.join()
 
   alias Bonfire.Common.Config

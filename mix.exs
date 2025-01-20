@@ -26,7 +26,7 @@ defmodule Boostomatic.MixProject do
       deps:
         Mess.deps([
           {:phoenix_live_reload, "~> 1.2", only: :dev},
-
+          {:bypass, "~> 2.1", only: :test},
           {:floki, ">= 0.0.0", only: [:dev, :test]}
         ])
     ]
