@@ -31,4 +31,3 @@ defmodule Boostomatic.Service.Mastodon do
     Boostomatic.Helpers.MastoAPI.boost(activity, client)
   end
 end
-

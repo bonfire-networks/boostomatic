@@ -36,4 +36,3 @@ defmodule Boostomatic.Service.Pixelfed do
     |> length() > 0
   end
 end
-

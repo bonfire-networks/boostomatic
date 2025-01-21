@@ -6,7 +6,7 @@ defmodule Boostomatic do
 
   # TODO - Boost to default service 
   def boost_activity(activity, user) do
-    boost_activity(activity, get_service(user), user)
+    boost_activity(activity, user, get_service(user))
   end
 
   def boost_activity(activity, user, service) do
@@ -24,7 +24,7 @@ defmodule Boostomatic do
     enabled_services = get_enabled_services(user)
 
     Enum.map(enabled_services, fn service ->
-      boost_activity(activity, service, user)
+      boost_activity(activity, user, service)
     end)
   end
 
@@ -37,4 +37,3 @@ defmodule Boostomatic do
     Settings.get([Boostomatic, :services_enabled], [], current_user: user)
   end
 end
-

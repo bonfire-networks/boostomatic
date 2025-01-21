@@ -51,4 +51,3 @@ defmodule Boostomatic.Worker do
     Bonfire.Common.Types.maybe_to_module(service) || nil
   end
 end
-

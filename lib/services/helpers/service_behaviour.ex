@@ -12,4 +12,3 @@ defmodule Boostomatic.Service.Behaviour do
   # Boost logic
   @callback boost(map(), map()) :: {:ok, String.t()} | {:error, term()}
 end
-
