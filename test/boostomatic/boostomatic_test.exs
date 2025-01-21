@@ -81,10 +81,10 @@ defmodule Boostomatic.MastodonTest do
   end
 
   doctest Boostomatic.Service.Mastodon
-  doctest Boostomatic.Helpers.MastodonCompatible
+  doctest Boostomatic.Helpers.MastoAPI
 
   @moduledoc """
-  Integration tests for the MastodonCompatible helper module
+  Integration tests for the MastoAPI helper module
   """
 
   setup do
