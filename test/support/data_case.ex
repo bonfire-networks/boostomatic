@@ -23,6 +23,8 @@ defmodule Boostomatic.DataCase do
       import Ecto.Changeset
       import Ecto.Query
       # import Boostomatic.DataCase
+
+      @moduletag :backend
     end
   end
 
