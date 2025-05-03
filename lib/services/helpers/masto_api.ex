@@ -4,7 +4,7 @@ defmodule Boostomatic.Helpers.MastoAPI do
   @moduledoc """
   Helper module for services implementing the Mastodon-compatible API.
   """
-  alias Bonfire.Common.Settings
+  use Bonfire.Common.Settings
 
   def prepare_client(user, service_name) do
     settings = Settings.get(service_name, [], current_user: user)

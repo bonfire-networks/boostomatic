@@ -2,7 +2,7 @@ defmodule Boostomatic do
   @moduledoc """
   Boostomatic is a service for automatically boosting posts across different social platforms.
   """
-  alias Bonfire.Common.Settings
+  use Bonfire.Common.Settings
 
   # TODO - Boost to default service 
   def boost_activity(activity, user) do

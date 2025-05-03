@@ -2,7 +2,7 @@ defmodule Boostomatic.MastodonTest do
   use ExUnit.Case
   # use Boostomatic.DataCase
   use Oban.Testing, repo: Bonfire.Common.Repo
-  alias Bonfire.Common.Settings
+  use Bonfire.Common.Settings
 
   setup tags do
     Bonfire.Common.Test.Interactive.setup_test_repo(tags)
@@ -101,7 +101,7 @@ defmodule Boostomatic.PixelfedServiceTest do
   use ExUnit.Case
   # use Boostomatic.DataCase
   use Oban.Testing, repo: Bonfire.Common.Repo
-  alias Bonfire.Common.Settings
+  use Bonfire.Common.Settings
 
   setup tags do
     Bonfire.Common.Test.Interactive.setup_test_repo(tags)

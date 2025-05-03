@@ -2,7 +2,7 @@ defmodule Boostomatic.LiveIntegrationTest do
   use ExUnit.Case
   # use Boostomatic.ConnCase
   use Oban.Testing, repo: Bonfire.Common.Repo
-  alias Bonfire.Common.Settings
+  use Bonfire.Common.Settings
 
   @moduletag :live_federation
 

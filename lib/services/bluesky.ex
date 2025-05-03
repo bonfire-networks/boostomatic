@@ -6,7 +6,7 @@ defmodule Boostomatic.Service.Bluesky do
   @behaviour Boostomatic.Service.Behaviour
 
   import Untangle
-  alias Bonfire.Common.Settings
+  use Bonfire.Common.Settings
 
   @doc """
   Prepares a Bluesky client with the given credentials.

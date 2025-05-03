@@ -7,7 +7,7 @@ defmodule Boostomatic.Service.Mastodon do
   """
 
   @behaviour Boostomatic.Service.Behaviour
-  alias Bonfire.Common.Settings
+  use Bonfire.Common.Settings
 
   @impl true
   def prepare_client(user) do

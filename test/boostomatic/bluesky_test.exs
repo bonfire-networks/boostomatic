@@ -1,7 +1,7 @@
 defmodule Boostomatic.BlueskyServiceTest do
   use ExUnit.Case
   use Oban.Testing, repo: Bonfire.Common.Repo
-  alias Bonfire.Common.Settings
+  use Bonfire.Common.Settings
 
   setup tags do
     Bonfire.Common.Test.Interactive.setup_test_repo(tags)
