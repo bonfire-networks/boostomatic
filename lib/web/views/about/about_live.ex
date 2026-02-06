@@ -14,8 +14,7 @@ defmodule Boostomatic.Web.AboutLive do
      assign(
        socket,
        page: "About",
-       page_title: "About the extension",
-       nav_items: Bonfire.Common.ExtensionModule.default_nav(:boostomatic)
+       page_title: "About the extension"
      )}
   end
 
