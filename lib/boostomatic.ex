@@ -16,7 +16,7 @@ defmodule Boostomatic do
       service: service
     }
     |> Boostomatic.Worker.new()
-    |> Oban.insert()
+    |> Bonfire.Common.TestInstanceRepo.oban_insert()
   end
 
   # Boost to all enabled services
