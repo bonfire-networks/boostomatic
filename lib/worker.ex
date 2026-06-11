@@ -20,7 +20,7 @@ defmodule Boostomatic.Worker do
   def perform(%Oban.Job{
         args: %{"activity" => activity, "user_id" => user_id, "service" => service}
       }) do
-    with %{} = user <- Bonfire.Common.Utils.maybe_apply(Bonfire.Me.Users, :get_current, user_id),
+    with %{} = user <- Bonfire.Common.Utils.maybe_apply(Bonfire.Me.Users, :by_id, user_id),
          service_module when not is_nil(service_module) <- get_service_module(service),
          {:ok, client} <- service_module.prepare_client(user),
          true <- service_module.validate_activity?(activity, user),
