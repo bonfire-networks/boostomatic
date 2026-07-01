@@ -2,7 +2,7 @@ defmodule Boostomatic.Web.HomeLive do
   use Bonfire.UI.Common.Web, :surface_live_view
 
   declare_extension(
-    "ExtensionTemplate",
+    l("Boostomatic"),
     icon: "bi:app",
     description: l("An awesome extension"),
     default_nav: [
