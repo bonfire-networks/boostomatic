@@ -1,5 +1,8 @@
 defmodule Boostomatic.PixelfedServiceTest do
   use ExUnit.Case
+
+  # bucket this into the backend CI leg: bare `ExUnit.Case` skips the tag the extension case templates apply, so without it this also runs in the federation job catch-all
+  @moduletag :backend
   # use Boostomatic.DataCase
   use Oban.Testing, repo: Bonfire.Common.Repo
   use Bonfire.Common.Settings
