@@ -4,6 +4,9 @@ defmodule Boostomatic.Helpers.MastoAPI do
   @moduledoc """
   Helper module for services implementing the Mastodon-compatible API.
   """
+
+  # TODO: rebuild on acting from a linked remote account once it exists: the boost becomes that account's `boost` action through the shared Mastodon API transport (Hunter), and the server and token come from the user's OAuth grant rather than plain user settings, so this client goes
+
   use Bonfire.Common.Settings
 
   def prepare_client(user, service_name) do
